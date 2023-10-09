@@ -1,0 +1,100 @@
+
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: beige;
+}
+.carlist {
+    width : 90vw;
+    max-width : 1170px;
+    margin : 2rem auto;
+    display : grid;
+    gap : 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding : 10px;
+}
+
+
+@media screen and (max-width :450px) {
+    .carlist {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.car {
+    display : flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0.25rem;
+    height : 80%;
+    margin : 10px;
+    border-radius : 1rem;
+    padding : 2rem 2rem;
+    background-color: grey;
+    width : 300px;
+
+}
+
+.carElement {
+    display : flex;
+    flex-direction: column;
+}
+.carElement button {
+    width : 50%;
+}
+
+
+.logindiv,.registerdiv {
+    display : flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.25rem;
+    height : 500px;
+    margin : 10px;
+    border-radius : 1rem;
+    padding : 2rem 2rem;
+    background-color: grey;
+    width : 400px;
+    
+}
+
+.loginform,.registerform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.loginform input {
+    margin : .5rem;
+    padding : .5rem 2rem;
+    border-radius: .3rem;
+}
+
+
+.registerform input {
+    margin : .5rem;
+    padding : .5rem 2rem;
+    border-radius: .3rem;
+}
+
+
+.profilemenu {
+    display : flex;
+    justify-content: center;
+    gap : 2rem;
+    background-color: burlywood;
+    border-radius: 10px;
+
+}
+
+.profilemenu button {
+    margin : 20px;
+}
+
+.welcome-msg {
+    margin : 2rem auto;
+    padding-left : 2rem;
+    text-align: left;
+}
