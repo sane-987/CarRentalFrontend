@@ -28,14 +28,15 @@ const UserProfile = () => {
 
   return (
     <>
-        <div className='profilemenu'>
-                <button>
+        <nav className='profilemenu'>
+                <button onClick = {UserProfile}>
                     MyProfile
                 </button>
                 <button onClick={handleLogout}>
                     Logout
                 </button>
-            </div>
+        </nav>
+        Your Bookings
         <section className='carlist'>
             {
                 Object.keys(carRentDetails).map((_) => {

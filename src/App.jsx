@@ -8,6 +8,9 @@ import Register from './Register'
 import Car from './Car'
 import UserProfile from "./UserProfile"
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import ReactDatePicker from 'react-datepicker'
+import Dashboard from './Dashboard'
+import CarBooking from './CarBooking'
 
 
 function App() {
@@ -17,7 +20,8 @@ function App() {
       <Routes>
         <Route path = "/" element = {<Login />}/>
         <Route path = "/register" element={<Register/>}/>
-        <Route path = "/dashboard" element = {<CarList/>}/>
+        <Route path="/carbooking" element={<CarBooking/>}/>
+        <Route path = "/carlist" element = {<CarList/>}/>
         <Route path = "/profile" element = {<UserProfile/>}/>
       </Routes>
     </BrowserRouter>

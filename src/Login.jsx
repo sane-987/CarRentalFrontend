@@ -25,8 +25,7 @@ const Login = () => {
         setStatus("Login Successful")
         localStorage.setItem("authenticated", true)
         localStorage.setItem("userId", userLog)
-        console.log("aklsjflka")
-        navigate("/dashboard")
+        navigate("/carlist")
       }
     })
     .catch((err) => {
@@ -51,6 +50,7 @@ const Login = () => {
             }}/>
             <button>Login</button>
         </form>
+        <p>Dont have an account? <a href="/Register">Register</a></p>
     </div>
   )
 }

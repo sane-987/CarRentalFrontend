@@ -44,6 +44,7 @@ function Register (){
             }}/>
             <button>Register</button>
         </form>
+        <p>Already a user? <a href="/">Login</a></p>
     </div>
   )
 }
